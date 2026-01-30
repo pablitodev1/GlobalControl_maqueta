@@ -1,0 +1,324 @@
+html {
+    font-family: "Montserrat", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-height: 100dvh;
+    overflow-x: hidden;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+#image_header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+#image_header img {
+    max-width: 250px;
+    height: auto;
+    padding: 1em;
+}
+
+nav {
+    /* border-bottom: 1px solid #b6b6b6;*/
+    background-color: #3952c4;
+    transition: transform 0.5s ease;
+    will-change: transform;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+nav li {
+    display: flex;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 0.9em;
+    display: flex;
+    background-color: #3548b4;
+    color: white;
+    padding: 1em 1em;
+    transition: background-color, color, 0.4s ease;
+    text-align: center;
+}
+
+.active_link {
+    background-color: #3548b4;
+    border-bottom: 4px solid #ffffff;
+}
+
+nav a:hover {
+    background-color: #e6eaff;
+    color: #3548b4;
+}
+
+#open_sidebar_button {
+    display: none;
+    background: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    padding: 1em;
+    cursor: pointer;
+}
+
+#open_sidebar_button svg {
+    fill: #2a2080;
+    /* color de boton para abrir menu */
+}
+
+#close_sidebar_button {
+    display: none;
+    background: none;
+    border: none;
+    padding: 1em;
+    cursor: pointer;
+}
+
+#close_sidebar_button svg {
+    fill: #ffffff;
+    /* color de boton para cerrar menu */
+}
+
+#overlay {
+    background-color: rgba(0, 0, 0, 0.534);
+    /*color de overlay al arbrir sidebar*/
+    position: fixed;
+    width: 100vw;
+    inset: 0;
+    z-index: 9;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;/
+}
+
+.index_welcome_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    width: 100%;
+    min-height: 500px;
+    color: black;
+    background-image: url("./img/welcome_image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.index_welcome_container h2 {
+    max-width: 650px;
+    text-align: right;
+    margin-right: 8vw;
+    font-size: 3em;
+    color: #1a1a1a;
+}
+
+.index_welcome_container p {
+    max-width: 550px;
+    text-align: right;
+    font-size: 1.2em;
+    margin-right: 8vw;
+    margin-top: 0.7em;
+}
+
+#index_products_title {
+    font-size: 1.2rem;
+    margin-top: 4rem;
+    padding-bottom: 1rem;
+    color: #494949;
+    text-align: center;
+}
+
+.index_products_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    min-height: 300px;
+    padding-bottom: 5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.index_product_container {
+    position: relative;
+    width: 250px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 4rem 1rem;
+    background-size: cover;
+    background-position: center;
+    background-color: transparent;
+    color: white;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.index_product_container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: var(--bg-image);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.index_product_container:hover::before {
+    filter: blur(5px) brightness(0.5);
+    transform: scale(1.1);
+}
+
+.index_product_container h3 {
+    font-size: 1rem;
+
+}
+
+.index_p_button {
+    border: solid 2px white;
+    padding: 1rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: white;
+    background-color: transparent;
+    border-radius: 5px;
+    transition: background-color, color, 0.4s ease;
+}
+
+.index_p_button:hover {
+    background-color: white;
+    color: rgb(53, 53, 53);
+}
+
+footer {
+    background-color: #506be2;
+    color: white;
+    text-align: center;
+    padding: 3rem 2rem;
+    margin-top: auto;
+}
+
+footer img {
+    width: 125px;
+    margin-bottom: 0.7rem;
+}
+
+
+
+
+/* el breakingpoint 800px es debido al font size de los enlaces (en nav a), se puede usar un breaking point menor si se ajusta eso, o el padding de los enlaces del navbar, precaución: los paddings de los enlaces se mantienen en el breakingpoint */
+
+@media screen and (max-width: 800px) {
+    #close_sidebar_button {
+        display: block;
+    }
+
+    #open_sidebar_button {
+        display: block;
+        z-index: 9;
+    }
+
+    /* Originalmente seguí un tutorial que sugería usar right -100% para poner el sidebar por defecto fuera de la pantalla, y después en nav.show simplemente poner right "0", y después transition: right en nav, pero resulta que este metodo de animación es demasiado demandante en términos de procesamiento, y si en cambio utilizamos transform: translateX para manejar la transición de posición para cualquier cosa, la animación es muy fluida incluso en pc's de muy baja gama. Muy recomendado. */
+
+    nav {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: min(15em, 100%);
+        z-index: 10;
+        border-left: 1px solid #b6b6b6;
+        border-bottom: none;
+        transform: translateX(100%);
+        transition: transform 0.5s ease;
+    }
+
+    .show {
+        transform: translateX(0);
+    }
+
+    /* Comentario relevante debugger: inicialmente este selector era solo .overlay_show, pero esto presentaba el problema que los selectores de ID (#) toman prioridad por sobre clases en CSS, entonces, a pesar de que la clase estaba siendo agregada correctamente, el estilo ID previo toma prioridad. Este problema no surge con el estilo de cosas como nav, porque en CSS el orden de prioridad es ID>CLASS>TAGS (es mas profundo el grupo de cada priporidad, pero es para entender este caso). La solución simple es agregar el selector del id original más la clase overlay_show, de esta forma le agregas mayor prioridad a este selector. Un selector con solo ID tiene prioridad 1.0.0, un selector de id mas clase tiene prioridad 1.1.0, de esta forma se antepone al estilo del id declarado antes del breakingpoint */
+
+    #overlay.overlay_show {
+        opacity: 1;
+        visibility: visible;
+        cursor: pointer;
+    }
+
+    nav ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    nav a {
+        width: 100%;
+    }
+
+    .active_link {
+        border-bottom: none;
+    }
+
+    .index_welcome_container {
+        background-image: url(./img/welcome_image_negative_2.jpg);
+        background-size: cover;
+        align-items: center;
+        color: white;
+    }
+
+    .index_welcome_container h2 {
+        font-size: 2rem;
+        text-align: center;
+        margin-left: 35px;
+        margin-right: 35px;
+        color: white;
+    }
+
+    .index_welcome_container p {
+        font-size: 0.9rem;
+        text-align: center;
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+
+    .index_product_container[data-aos] {
+        transition-delay: 0s !important;
+    }
+
+
+}

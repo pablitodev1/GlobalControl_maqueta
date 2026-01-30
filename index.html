@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./assets/script.js" defer></script>
+    <link rel="stylesheet" href="./assets/styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <title>Global Control</title>
+</head>
+
+<body>
+
+    <header>
+       
+        <div id="image_header">
+            <a href="./index.html"><img src="./assets/Logo_renew.png" alt="logo Global Control"></a>
+        </div>
+       
+        
+        <!-- Inicio de NAVBAR responsiva, Breakpoint es 800px, puede ser menor si se reduce el fontsize de los enlaces en el CSS, para evitar links con dos lineas en pantallas mas pequeñas-->
+
+        <button id="open_sidebar_button" onclick="openSidebar()">
+            <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px">
+                <path
+                    d="M165.13-254.62q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.86q7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.87q-7.22 7.12-17.9 7.12H165.13Zm0-200.25q-10.68 0-17.9-7.27-7.23-7.26-7.23-17.99 0-10.74 7.23-17.87 7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.27 7.23 7.26 7.23 17.99 0 10.74-7.23 17.87-7.22 7.13-17.9 7.13H165.13Zm0-200.26q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.87q7.22-7.12 17.9-7.12h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.86q-7.22 7.13-17.9 7.13H165.13Z" />
+            </svg>
+        </button>
+
+        <nav id="navbar">
+            <ul>
+                <li><button id="close_sidebar_button" onclick="closeSidebar()">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px">
+                            <path
+                                d="m480-444.62-209.69 209.7q-7.23 7.23-17.5 7.42-10.27.19-17.89-7.42-7.61-7.62-7.61-17.7 0-10.07 7.61-17.69L444.62-480l-209.7-209.69q-7.23-7.23-7.42-17.5-.19-10.27 7.42-17.89 7.62-7.61 17.7-7.61 10.07 0 17.69 7.61L480-515.38l209.69-209.7q7.23-7.23 17.5-7.42 10.27-.19 17.89 7.42 7.61 7.62 7.61 17.7 0 10.07-7.61 17.69L515.38-480l209.7 209.69q7.23 7.23 7.42 17.5.19 10.27-7.42 17.89-7.62 7.61-17.7 7.61-10.07 0-17.69-7.61L480-444.62Z" />
+                        </svg></button></li>
+                
+                <li><a class="active_link" href="">INICIO</a></li>
+                <li><a href="">QUIENES SOMOS</a></li>
+                <li><a href="">SERVICIOS</a></li>
+                <li><a href="">PRODUCTOS</a></li>
+                <li><a href="">CONTACTO</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <div id="overlay" onclick="closeSidebar()"></div>
+
+    <div class="index_welcome_container" data-aos="fade-down" data-aos-duration="1000">
+        <h2>Somos el distribuidor oficial de Onity en Chile</h2>
+        <p>Entregamos soluciones de seguridad, cerraduras y sistemas de gestión de energía</p>
+    </div>
+
+
+    <div id="index_products_title" data-aos="fade-down" data-aos-duration="1000">
+        <h2>Nuestros Productos</h2>
+    </div>
+
+    <div class="index_products_container">
+
+        <div class="index_product_container" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="50"
+            style="--bg-image: url(/assets/img/p1_cerradura_negative.jpg);">
+            <h3>SISTEMAS DE CERRADURA ELECTRÓNICA</h3>
+            <p>La tecnología más fiable en cerraduras electrónicas con seguridad y conveniencia añadidas.</p>
+            <a href="" class="index_p_button">Más información</a>
+        </div>
+
+        <div class="index_product_container" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200"
+            style="--bg-image: url('/assets/img/p1_cerradura_negative.jpg');">
+            <h3>CAJAS FUERTES ELECTRÓNICAS</h3>
+            <p>Seguras, robustas y asequibles, con una gran variedad de opciones para uso en hoteles, empresas etc.</p>
+            <a href="" class="index_p_button">Más información</a>
+        </div>
+
+        <div class="index_product_container" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="350"
+            style="--bg-image: url('/assets/img/p1_cerradura_negative.jpg');">
+            <h3>GESTIÓN DE ENERGÍA</h3>
+            <p>Termostatos digitales programables para la industria hotelera, que reducen los costes de energía y
+                mejoran el confort del cliente.</p>
+            <a href="" class="index_p_button">Más información</a>
+        </div>
+
+        <div class="index_product_container" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500"
+            style="--bg-image: url('/assets/img/p1_cerradura_negative.jpg');">
+            <h3>MINIBARES</h3>
+            <p>Minibares "Solution" de Onity, equipamiento esencial para la habitación de hotel.</p>
+            <a href="" class="index_p_button">Más información</a>
+        </div>
+
+    </div>
+
+    <footer>
+        <img src="./assets/Logo_renew_white.png" alt="logo Global Control blanco">
+        <p>© 2026 Global Control. Todos los derechos reservados. Sitio diseñado y desarrollado por Pablo Navarro.</p>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
