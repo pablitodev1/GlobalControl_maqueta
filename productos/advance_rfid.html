@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="../assets/script.js" defer></script>
+    <link rel="stylesheet" href="../assets/styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+    <title>Global Control</title>
+</head>
+
+<body>
+
+    <header>
+
+        <div id="image_header">
+            <a href="../index.html"><img src="../assets/Logo_renew.png" alt="logo Global Control"></a>
+        </div>
+
+
+        <!-- Inicio de NAVBAR responsiva, Breakpoint es 800px, puede ser menor si se reduce el fontsize de los enlaces en el CSS, para evitar links con dos lineas en pantallas mas pequeñas-->
+
+        <button id="open_sidebar_button" onclick="openSidebar()">
+            <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px">
+                <path
+                    d="M165.13-254.62q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.86q7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.87q-7.22 7.12-17.9 7.12H165.13Zm0-200.25q-10.68 0-17.9-7.27-7.23-7.26-7.23-17.99 0-10.74 7.23-17.87 7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.27 7.23 7.26 7.23 17.99 0 10.74-7.23 17.87-7.22 7.13-17.9 7.13H165.13Zm0-200.26q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.87q7.22-7.12 17.9-7.12h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.86q-7.22 7.13-17.9 7.13H165.13Z" />
+            </svg>
+        </button>
+
+        <nav id="navbar">
+            <ul>
+                <li><button id="close_sidebar_button" onclick="closeSidebar()">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px">
+                            <path
+                                d="m480-444.62-209.69 209.7q-7.23 7.23-17.5 7.42-10.27.19-17.89-7.42-7.61-7.62-7.61-17.7 0-10.07 7.61-17.69L444.62-480l-209.7-209.69q-7.23-7.23-7.42-17.5-.19-10.27 7.42-17.89 7.62-7.61 17.7-7.61 10.07 0 17.69 7.61L480-515.38l209.69-209.7q7.23-7.23 17.5-7.42 10.27-.19 17.89 7.42 7.61 7.62 7.61 17.7 0 10.07-7.61 17.69L515.38-480l209.7 209.69q7.23 7.23 7.42 17.5.19 10.27-7.42 17.89-7.62 7.61-17.7 7.61-10.07 0-17.69-7.61L480-444.62Z" />
+                        </svg></button></li>
+
+                <li><a href="../index.html">INICIO</a></li>
+                <li><a href="">QUIENES SOMOS</a></li>
+                <li><a href="">SERVICIOS</a></li>
+                <li><a class="active_link" href="/productos/advance_rfid.html">PRODUCTOS</a></li>
+                <li><a href="">CONTACTO</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <div id="overlay" onclick="closeSidebar()"></div>
+
+    <div class="product_name_title">
+        <h2>Sistema Advance RFID</h2>
+    </div>
+
+    <div class="product_header_container">
+        <img src="../assets/img/advance_rfid.jpg" alt="cerradura advance rfid">
+        <div class="product_header_text_container">
+            <h3>
+                Mejorando la Estética y Facilidad de Uso Sin Comprometer la Seguridad
+            </h3>
+            <p>ADVANCE RFID (Identificación de Radio Frecuencia) combina todas las opciones estéticas de un sistema
+                modular ADVANCE con la seguridad y fiabilidad de la tecnología de proximidad RFID. Al no haber contacto
+                físico entre la tarjeta y el lector, ADVANCE RFID elimina la necesidad del usuario de insertar la
+                tarjeta, haciendo el acceso autorizado más rápido y conveniente.</p>
+        </div>
+    </div>
+
+    <div class="product_system_title">
+        <h3>Prestaciones del Sistema</h3>
+    </div>
+
+    <div class="product_system_container">
+
+        <div class="product_system_1">
+            <p><b>ADVANCE RFFID</b> utiliza tecnología MiFare® Classic, que se ha convertido en un estándar de seguridad a nivel mundial. El sistema puede utilizar tarjetas y tokens de 1K, 4K y Ultralight, y es compatible con ISO1443A e ISO1443B (parte 4). Onity escribe en el sector 1 de las tarjetas MiFare de 1K y 4K, que permite usar la misma tarjeta para aplicaciones adicionales.</p>
+            <p><b>ADVANCE RFID</b> puede ser usado con confianza tanto por los administradores del sistema como por los usuarios. El sistema cuenta con varios niveles de encriptación, incluyendo una encriptación adicional exclusiva de Onity, a fin de maximizar la seguridad y su tranquilidad.</p>
+        </div>
+        <div class="product_system_2">
+            <p><b>Tecnología:</b> Tecnología MiFare® basada en estándares / 14443A / 14443B (parte 4) / Tokens en múltiples formatos / Fácil actualización (Kit de actualización disponible), menos de 5 minutos por puerta. La migración de ADVANCE banda magnética o dual Mag/Smart requiere solamente reemplazar el lector. </p>
+            <p><b>Seguridad:</b> Codificación de tarjetas NXP Crypto-1 / Codificación de datos propia de Onity / Tecnología "Look Ahead" propia / Las tarjetas o tokens nuevos cancelan los anteriores. <br></anteriores></p>
+            <p><b>Certificaciones:</b> Certificados FCC & CE / Certificado UL10c para 3 horas / BHMA 156.25 / BHMA 156.13 / Cumple con ISO14443A e ISO14443B (parte 4).</p>
+        </div>
+
+    </div>
+
+    <div class="product_images_extra">
+        <img id="products_image_1" src="../assets/img/cards.jpg" alt="tarjetas Onity">
+        <img id="products_image_2" src="../assets/img/upgradeability.jpg" alt="Actualización sistema Onity">
+    </div>
+
+    <div class="product_cerraduras_title">
+        <h3>
+            Cerraduras ADVANCE - Opciones de Cerradura
+        </h3>
+        <p>
+            Las cerraduras ADVANCE disponen de una amplia gama de atractivos acabados, manillas intercambiables y placas decorativas que se adaptan perfectamente a la decoración de cualquier hotel.
+        </p>
+    </div>
+    <div class="products_cerraduras_container">
+        <div class="product_cerradura">
+            <div>
+            <h3>MANILLAS</h3>
+            <p>Elija la manilla que mejor complemente el estilo de su hotel. La manilla Wing es la estándar</p>
+            </div>
+            <img src="../assets/img/manillasadvance.jpg" alt="manillas advance onity">
+        </div>
+        <div class="product_cerradura">
+            <div>
+            <h3>ACABADOS</h3>
+            <p>Incremente la elegancia de su cerradura Onity con cualquiera de estos acabados extraresistentes.</p>
+            </div>
+            <img src="../assets/img/terminacionadvance.jpg" alt="terminaciones advance onity">
+        </div>
+        <div class="product_cerradura">
+            <div>
+            <h3>PICAPORTES</h3>
+            <p>Los picaportes de Onity incluyen la versión EURO, ANSI, ANSI con proyección automática de palanca y DIN con proyección automática de palanca. Los picaportes ANSI están diseñados según el estándar ANSI Grado 1.</p>
+            </div>
+            <img src="../assets/img/picaporteadvance.jpg" alt="picaportes advance onity">
+        </div>
+          <div class="product_cerradura">
+            <div>
+            <h3>PLACAS DECORATIVAS</h3>
+            <p>Onity ofrece una amplia selección de placas, ideales para proyectos de reforma. Existe la posibilidad de personalizar su diseño.</p>
+            </div>
+            <img id="product_img_vertical" src="../assets/img/placasadvance.jpg" alt="placas decorativas advance onity">
+        </div>
+    </div>
+
+    <footer>
+        <img src="../assets/Logo_renew_white.png" alt="logo Global Control blanco">
+        <p>© 2026 Global Control. Todos los derechos reservados. Sitio diseñado y desarrollado por Pablo Navarro.</p>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
