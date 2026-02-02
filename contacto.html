@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./assets/script.js" defer></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="./assets/styles.css">
+
+    <title>Global Control</title>
+</head>
+
+<body>
+
+    <header>
+
+        <div id="image_header">
+            <a href="./index.html"><img src="./assets/Logo_renew.png" alt="logo Global Control"></a>
+        </div>
+
+
+        <!-- Inicio de NAVBAR responsiva, Breakpoint es 800px, puede ser menor si se reduce el fontsize de los enlaces en el CSS, para evitar links con dos lineas en pantallas mas pequeñas-->
+
+        <button id="open_sidebar_button" onclick="openSidebar()">
+            <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px">
+                <path
+                    d="M165.13-254.62q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.86q7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.87q-7.22 7.12-17.9 7.12H165.13Zm0-200.25q-10.68 0-17.9-7.27-7.23-7.26-7.23-17.99 0-10.74 7.23-17.87 7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.27 7.23 7.26 7.23 17.99 0 10.74-7.23 17.87-7.22 7.13-17.9 7.13H165.13Zm0-200.26q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.87q7.22-7.12 17.9-7.12h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.86q-7.22 7.13-17.9 7.13H165.13Z" />
+            </svg>
+        </button>
+
+        <nav id="navbar">
+            <ul>
+                <li><button id="close_sidebar_button" onclick="closeSidebar()">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px">
+                            <path
+                                d="m480-444.62-209.69 209.7q-7.23 7.23-17.5 7.42-10.27.19-17.89-7.42-7.61-7.62-7.61-17.7 0-10.07 7.61-17.69L444.62-480l-209.7-209.69q-7.23-7.23-7.42-17.5-.19-10.27 7.42-17.89 7.62-7.61 17.7-7.61 10.07 0 17.69 7.61L480-515.38l209.69-209.7q7.23-7.23 17.5-7.42 10.27-.19 17.89 7.42 7.61 7.62 7.61 17.7 0 10.07-7.61 17.69L515.38-480l209.7 209.69q7.23 7.23 7.42 17.5.19 10.27-7.42 17.89-7.62 7.61-17.7 7.61-10.07 0-17.69-7.61L480-444.62Z" />
+                        </svg></button></li>
+
+                <li><a href="./index.html">INICIO</a></li>
+                <li><a href="">QUIENES SOMOS</a></li>
+                <li><a href="">SERVICIOS</a></li>
+                <li><a href="./productos/advance_rfid.html">PRODUCTOS</a></li>
+                <li><a class="active_link" href="./contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <div id="overlay" onclick="closeSidebar()"></div>
+
+<!-- CHILE - contacto -->
+
+    <div class="contacto_pais_container">
+        <div class="bandera_maps">
+            <div id="bandera_chile">
+                <img src="./assets/img/bandera_chile.jpg" alt="Bandera de Chile">
+            </div>
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d832.3284735475676!2d-70.64727923034675!3d-33.44112769833706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5a1e993b0c3%3A0x621959f2822babfb!2sSociedad%20Comercial%20Global%20Control%20Ltda.!5e0!3m2!1ses!2scl!4v1770059913713!5m2!1ses!2scl"
+                width="300" height="200" style="border: 2px solid #cccccc;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="contacto_pais_text_container">
+
+            <div class="contacto_text_block">
+                <h2 class="contacto_title">DIRECCIÓN</h2>
+                <div class="contacto_pais_text">
+                    <span class="material-symbols-outlined">
+                        location_on
+                    </span>
+                    <p>Enrique Mac Iver #142 Of. 304, Santiago Centro, Chile.</p>
+                </div>
+            </div>
+
+            <div class="contacto_text_block">
+                <h2 class="contacto_title">MESA CENTRAL</h2>
+                <div class="contacto_pais_text">
+                    <span class="material-symbols-outlined">
+                        phone_enabled
+                    </span>
+                    <p>+562 4665 691</p>
+                </div>
+            </div>
+
+            <div class="contacto_text_block">
+                <h2 class="contacto_title">VENTAS Y SERVICIOS</h2>
+                <div class="contacto_pais_text">
+                    <span class="material-symbols-outlined">
+                        phone_enabled
+                    </span>
+                    <p>+562 7840 271 / +569 7649 4706</p>
+                </div>
+                <div class="contacto_pais_text">
+                    <span class="material-symbols-outlined">
+                        email
+                    </span>
+                    <p>ventasyservicios@globalcontrol.cl</p>
+                </div>
+            </div>
+
+            <div class="contacto_text_block">
+                <h2 class="contacto_title">SERVICIO TÉCNICO</h2>
+                <div class="contacto_pais_text">
+                    <span class="material-symbols-outlined">
+                        phone_enabled
+                    </span>
+                    <p>+562 784 0270</p>
+                </div>
+                
+                <div class="contacto_pais_text">
+                    <span class="material-symbols-outlined">
+                        email
+                    </span>
+                    <p>serviciotecnico@globalcontrol.cl</p>
+                </div>
+            </div>
+
+            <div class="contacto_text_block">
+                <h2 class="contacto_title">GERENTE GENERAL</h2>
+                <h3 class="contacto_gerente">Ricardo Mellado Quintana</h3>
+                <div class="contacto_pais_text">
+                    <span class="material-symbols-outlined">
+                        email
+                    </span>
+                    <p>gerencia@globalcontrol.cl</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="contacto_divider"></div>
+
+<!-- PERÚ - contacto -->
+
+    <div class="contacto_pais_container">
+        <div class="bandera_maps">
+            <div id="bandera_chile">
+                <img src="./assets/img/bandera_peru.jpg" alt="Bandera de Perú">
+            </div>
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d832.3284735475676!2d-70.64727923034675!3d-33.44112769833706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5a1e993b0c3%3A0x621959f2822babfb!2sSociedad%20Comercial%20Global%20Control%20Ltda.!5e0!3m2!1ses!2scl!4v1770059913713!5m2!1ses!2scl"
+                width="300" height="200" style="border: 2px solid #cccccc;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="contacto_pais_text_container">
+
+            <div class="contacto_text_block">
+                <h2 class="contacto_title">DIRECCIÓN</h2>
+                <div class="contacto_pais_text">
+                    <span class="material-symbols-outlined">
+                        location_on
+                    </span>
+                    <p>JR. Independencia 106 Of. 1402, Cuadra 3 Av. Pardo, Lima, Perú.</p>
+                </div>
+            </div>
+
+            <div class="contacto_text_block">
+                <h2 class="contacto_title">CONTACTO</h2>
+                <div class="contacto_pais_text">
+                    <span class="material-symbols-outlined">
+                        person
+                    </span>
+                    <p>Patricia Ostria Castellanos</p>
+                </div>
+                 <div class="contacto_pais_text">
+                    <span class="material-symbols-outlined">
+                        email
+                    </span>
+                    <p>patricia.ostria@globalcontrol.pe</p>
+                </div>
+            </div>
+
+            <div class="contacto_text_block">
+                <h2 class="contacto_title">TELÉFONOS</h2>
+                <div class="contacto_pais_text">
+                    <span class="material-symbols-outlined">
+                        phone_enabled
+                    </span>
+                    <p>+511 447 1547 / +511 9 9800 5094</p>
+                </div>
+            </div>
+
+             <div class="contacto_text_block">
+                <h2 class="contacto_title">VENTAS Y SERVICIOS</h2>
+                <div class="contacto_pais_text">
+                    <span class="material-symbols-outlined">
+                        phone_enabled
+                    </span>
+                    <p>+511 9 7643 5284</p>
+                </div>
+                <div class="contacto_pais_text">
+                    <span class="material-symbols-outlined">
+                        email
+                    </span>
+                    <p>ventasyservicios@globalcontrol.pe</p>
+                </div>
+            </div>
+
+            <div class="contacto_text_block">
+                <h2 class="contacto_title">SERVICIO TÉCNICO</h2>
+                <div class="contacto_pais_text">
+                    <span class="material-symbols-outlined">
+                        phone_enabled
+                    </span>
+                    <p>+511 9 7772 8468</p>
+                </div>
+                
+                <div class="contacto_pais_text">
+                    <span class="material-symbols-outlined">
+                        email
+                    </span>
+                    <p>Serviciotecnico@globalcontrol.pe</p>
+                </div>
+            </div>
+
+            <div class="contacto_text_block">
+                <h2 class="contacto_title">GERENTE GENERAL</h2>
+                <h3 class="contacto_gerente">Ricardo Mellado Quintana</h3>
+                <div class="contacto_pais_text">
+                    <span class="material-symbols-outlined">
+                        phone_enabled
+                    </span>
+                    <p>+511 447 6015</p>
+                </div>
+                <div class="contacto_pais_text">
+                    <span class="material-symbols-outlined">
+                        email
+                    </span>
+                    <p>ricardo.mellado@globalcontrol.pe</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="contacto_divider"></div>
+
+    <!-- BOLIVIA - contacto -->
+
+     <div class="contacto_pais_container">
+        <div class="bandera_maps">
+            <div id="bandera_chile">
+                <img src="./assets/img/bandera_bolivia.jpg" alt="Bandera de Bolivia">
+            </div>
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d832.3284735475676!2d-70.64727923034675!3d-33.44112769833706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5a1e993b0c3%3A0x621959f2822babfb!2sSociedad%20Comercial%20Global%20Control%20Ltda.!5e0!3m2!1ses!2scl!4v1770059913713!5m2!1ses!2scl"
+                width="300" height="200" style="border: 2px solid #cccccc;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="contacto_pais_text_container">
+
+            <div class="contacto_text_block">
+                <h2 class="contacto_title">DIRECCIÓN</h2>
+                <div class="contacto_pais_text">
+                    <span class="material-symbols-outlined">
+                        location_on
+                    </span>
+                    <p>Segundo anillo 240 entre Av. Charcas y Av. Melchor Pinto, Santa Cruz de la Cierra, Bolivia</p>
+                </div>
+            </div>
+
+            <div class="contacto_text_block">
+                <h2 class="contacto_title">CONTACTO</h2>
+                <div class="contacto_pais_text">
+                    <span class="material-symbols-outlined">
+                        person
+                    </span>
+                    <p>Carlos Saavedra Teran</p>
+                </div>
+                 <div class="contacto_pais_text">
+                    <span class="material-symbols-outlined">
+                        email
+                    </span>
+                    <p>carlos.saavedra@man-lock.com</p>
+                </div>
+            </div>
+
+            <div class="contacto_text_block">
+                <h2 class="contacto_title">TELÉFONOS</h2>
+                <div class="contacto_pais_text">
+                    <span class="material-symbols-outlined">
+                        phone_enabled
+                    </span>
+                    <p>+591 7213 4949 / +591 3324 8777</p>
+                </div>
+            </div>
+
+            <div class="contacto_text_block">
+                <h2 class="contacto_title">GERENTE GENERAL</h2>
+                <h3 class="contacto_gerente">Ricardo Mellado Quintana</h3>
+                <div class="contacto_pais_text">
+                    <span class="material-symbols-outlined">
+                        phone_enabled
+                    </span>
+                    <p>+511 447 6015</p>
+                </div>
+                <div class="contacto_pais_text">
+                    <span class="material-symbols-outlined">
+                        email
+                    </span>
+                    <p>ricardo.mellado@globalcontrol.pe</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+        <img src="./assets/Logo_renew_white.png" alt="logo Global Control blanco">
+        <p>© 2026 Global Control. Todos los derechos reservados. Sitio diseñado y desarrollado por Pablo Navarro.</p>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

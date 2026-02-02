@@ -150,7 +150,7 @@ nav a:hover {
     font-size: 1.2rem;
     margin-top: 4rem;
     padding-bottom: 3rem;
-    color: #494949;
+    color: #314b97;
     text-align: center;
 }
 
@@ -182,7 +182,6 @@ nav a:hover {
     background-position: center;
     background-color: transparent;
     color: white;
-    border-radius: 5px;
     overflow: hidden;
 }
 
@@ -246,7 +245,7 @@ footer img {
     font-size: 1.8rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    color: #333333;
+    color: #314b97;
     background-color: #ffffff;
 }
 
@@ -278,7 +277,7 @@ footer img {
 .product_header_text_container h3 {
     font-size: 1.5rem;
     max-width: 75%;
-    color: #727272;
+    color: #314b97;
 }
 
 .product_header_text_container p {
@@ -289,9 +288,8 @@ footer img {
 .product_system_title {
     text-align: center;
     gap: 0.5rem;
-    background-color: #ffffff;
     padding: 4rem 0 1rem 0;
-    color: #2b2b2b;
+    color: #314b97;
     font-size: 1.7rem;
 }
 
@@ -352,66 +350,156 @@ footer img {
 .product_cerraduras_title {
     text-align: center;
     padding: 3rem 10vw 1rem 10vw;
-    background-color: rgb(255, 255, 255);
 }
 
 .product_cerraduras_title h3 {
     font-size: 1.7rem;
+    color: #314b97;
 }
 
 .products_cerraduras_container {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem 4rem 5rem 4rem;
+}
+
+/*Para usar AOS en conjunto con Hover se necesita un wrapper, este es el contendor padre que solo maneja las dimensiones y el layout flex, mientras que el hijo maneja las animaciones hover*/
+.product_cerradura {
+    flex: 0 1 400px;
+    min-width: 300px;
+    min-height: 350px;
+    display: flex;
+}
+
+.product_cerradura_inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.5rem;
+    border: solid 2px #b6b6b6;
+    background-color: #fff;
+    width: 100%; 
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out, border-color 0.3s ease;
+}
+
+.product_cerradura_inner:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    border-color: #333;
+    z-index: 10;
+    position: relative;
+}
+.product_info h3 {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+}
+
+.product_info p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+}
+
+.product_image_container {
     width: 100%;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.product_image_container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+/* Modificador para Imagen Vertical */
+.product_cerradura.is_vertical .product_image_container img {
+    width: auto;
+    height: 100%;
+}
+
+/* Estilos para iconos google*/
+.material-symbols-outlined {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #314b97;
+}
+
+/* Estilos de CONTACTO */
+
+.contacto_pais_container {
+    display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 2rem;
-    background-color: rgb(255, 255, 255);
-    padding: 2rem 5rem 6rem 5rem;
+    padding: 5rem;
+    gap: 3rem;
 }
 
-.product_cerradura {
-    width: 400px;
-    height: 300px;
+
+.contacto_text_block {
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    font-size: 0.8rem;
-    padding: 1.2rem;
-    border: solid 2px #b6b6b6;
+    gap: 0.3rem;
+}   
+
+.bandera_maps {
+    display: flex;
+    width: 50vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
     gap: 1rem;
-    background-color: rgb(255, 255, 255);
 }
 
-.product_cerradura h3 {
-    text-align: center;
+#bandera_chile img {
+    width: 300px;
+    height: auto;
+    border: 2px solid #d9d9d9;
+}
+
+.contacto_title {
+    color: #314b97;
     font-size: 1rem;
-    padding-bottom: 0.5rem;
 }
 
-.product_cerradura p {
-    text-justify: inter-word;
+.contacto_gerente {
+    font-weight: 700;
+    font-size: 1rem;
+     color: #314b97;
 }
 
-.product_cerradura img {
-    width: 375px;
-    height: auto;
+.contacto_pais_text_container {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
-#product_img_vertical img{
-    width: 125px;
-    height: auto;
+.contacto_pais_text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+   gap: 0.7rem;
 }
 
-.material-symbols-outlined {
-    font-size: 2.5rem;
-    font-weight: 1000;
-    color: #2b2b2b;
+.contacto_divider {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    height: 2px;
+    background-color: #b6b6b6;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
-
-
 
 
 /* el breakingpoint 800px es debido al font size de los enlaces (en nav a), se puede usar un breaking point menor si se ajusta eso, o el padding de los enlaces del navbar, precaución: los paddings de los enlaces se mantienen en el breakingpoint */
@@ -517,7 +605,8 @@ footer img {
         flex-direction: column;
     }
 
-    .product_system_1, .product_system_2 {
+    .product_system_1,
+    .product_system_2 {
         width: 100%;
         padding: 1rem 3rem;
     }
@@ -525,6 +614,10 @@ footer img {
     .product_images_extra {
         flex-direction: column;
         gap: 2rem;
+    }
+
+    .product_cerradura[data-aos] {
+        transition-delay: 0s !important;
     }
 
 }
