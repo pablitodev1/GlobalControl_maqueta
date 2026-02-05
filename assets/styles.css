@@ -226,7 +226,7 @@ nav a:hover {
 }
 
 footer {
-    background-color: #506be2;
+    background-color: #314b97;
     color: white;
     text-align: center;
     padding: 3rem 2rem;
@@ -382,17 +382,18 @@ footer img {
     padding: 1.5rem;
     border: solid 2px #b6b6b6;
     background-color: #fff;
-    width: 100%; 
+    width: 100%;
     transition: transform 0.3s ease-out, box-shadow 0.3s ease-out, border-color 0.3s ease;
 }
 
 .product_cerradura_inner:hover {
     transform: scale(1.05);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
     border-color: #333;
     z-index: 10;
     position: relative;
 }
+
 .product_info h3 {
     text-align: center;
     font-size: 1.1rem;
@@ -449,7 +450,7 @@ footer img {
     display: flex;
     flex-direction: column;
     gap: 0.3rem;
-}   
+}
 
 .bandera_maps {
     display: flex;
@@ -460,7 +461,11 @@ footer img {
     gap: 1rem;
 }
 
-#bandera_chile img {
+.nombre_pais {
+    display: none;
+}
+
+.bandera_pais img {
     width: 300px;
     height: auto;
     border: 2px solid #d9d9d9;
@@ -474,7 +479,7 @@ footer img {
 .contacto_gerente {
     font-weight: 700;
     font-size: 1rem;
-     color: #314b97;
+    color: #314b97;
 }
 
 .contacto_pais_text_container {
@@ -488,7 +493,7 @@ footer img {
     display: flex;
     flex-direction: row;
     align-items: center;
-   gap: 0.7rem;
+    gap: 0.7rem;
 }
 
 .contacto_divider {
@@ -620,4 +625,41 @@ footer img {
         transition-delay: 0s !important;
     }
 
+    /* Estilos para contacto en mobile */
+    .contacto_pais_container {
+        flex-direction: column;
+        padding: 3rem;
+    }
+
+    .bandera_maps {
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .nombre_pais {
+        display: block;
+        color: #314b97;
+        font-size: 2rem;
+        padding: 1rem;
+    }
+
+    .bandera_pais {
+        display: none;
+    }
+
+    iframe {
+        width: 250px;
+        height: 150px;
+    }
+
+    .contacto_title {
+        text-align: center;
+    }
+
+    .contacto_pais_text_container {
+    width: 100%;
 }
+}
+
