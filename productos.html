@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./assets/script.js" defer></script>
+    <link rel="stylesheet" href="./assets/styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <title>Global Control</title>
+</head>
+
+<body>
+
+    <header>
+
+        <div id="image_header">
+            <a href="./index.html"><img src="./assets/Logo_renew.png" alt="logo Global Control"></a>
+        </div>
+
+
+        <!-- Inicio de NAVBAR responsiva, Breakpoint es 800px, puede ser menor si se reduce el fontsize de los enlaces en el CSS, para evitar links con dos lineas en pantallas mas pequeñas-->
+
+        <button id="open_sidebar_button" onclick="openSidebar()">
+            <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px">
+                <path
+                    d="M165.13-254.62q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.86q7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.87q-7.22 7.12-17.9 7.12H165.13Zm0-200.25q-10.68 0-17.9-7.27-7.23-7.26-7.23-17.99 0-10.74 7.23-17.87 7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.27 7.23 7.26 7.23 17.99 0 10.74-7.23 17.87-7.22 7.13-17.9 7.13H165.13Zm0-200.26q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.87q7.22-7.12 17.9-7.12h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.86q-7.22 7.13-17.9 7.13H165.13Z" />
+            </svg>
+        </button>
+
+        <nav id="navbar">
+            <ul>
+                <li><button id="close_sidebar_button" onclick="closeSidebar()">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px">
+                            <path
+                                d="m480-444.62-209.69 209.7q-7.23 7.23-17.5 7.42-10.27.19-17.89-7.42-7.61-7.62-7.61-17.7 0-10.07 7.61-17.69L444.62-480l-209.7-209.69q-7.23-7.23-7.42-17.5-.19-10.27 7.42-17.89 7.62-7.61 17.7-7.61 10.07 0 17.69 7.61L480-515.38l209.69-209.7q7.23-7.23 17.5-7.42 10.27-.19 17.89 7.42 7.61 7.62 7.61 17.7 0 10.07-7.61 17.69L515.38-480l209.7 209.69q7.23 7.23 7.42 17.5.19 10.27-7.42 17.89-7.62 7.61-17.7 7.61-10.07 0-17.69-7.61L480-444.62Z" />
+                        </svg></button></li>
+
+                <li><a href="./index.html">INICIO</a></li>
+                <li><a href="">QUIENES SOMOS</a></li>
+                <li><a href="">SERVICIOS</a></li>
+                <li><a href="./mercados.html">MERCADOS</a></li>
+                <li><a class="active_link" href="./productos.html">PRODUCTOS</a></li>
+                <li><a href="./contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <div id="overlay" onclick="closeSidebar()"></div>
+
+    <section class="mercado_seccion" id="cerraduras" data-aos="fade-right" data-aos-duration="1000">
+        <div class="mercado_seccion_img">
+            <img src="./assets/img/advance33.jpg" alt="Hotelería">
+        </div>
+        <div class="mercado_text_wrapper">
+            <h3>SISTEMAS DE CERRADURA ELECTRÓNICA</h3>
+            <p>Onity combina su gran experiencia de más de 20 años en el sector con una tecnología innovadora y servicio
+                superior, para proporcionar los sistemas electrónicos más avanzados de la industria.
+                Con más de 3,7 millones de cerraduras electrónicas instaladas por el mundo, se pueden encontrar sistemas
+                de cerradura electrónica Onity en más de 22,000 instalaciones y 115 países.
+                Onity ofrece soluciones reales y un servicio fiable para los mercados Hoteleros, Empresas,
+                Universidades, Gubernamentales / Bases Militares y Barcos. Sean cuales sean sus requisitos, Onity tiene
+                una solución de cerradura electrónica para cubrir sus necesidades.</p>
+            <button class="btn_abrir" data-target="modal_cerraduras">Ver Productos</button>
+        </div>
+    </section>
+
+    <div id="modal_cerraduras" class="modal_overlay">
+        <div class="modal_content">
+            <button class="btn_cerrar">&times;</button>
+
+            <h2>Cerraduras Electrónicas</h2>
+            <hr>
+
+            <div class="categorias_grid">
+                <div class="categoria">
+                    <ul>
+                        <li><a href="./productos/advance_rfid.html">Modelo Advance RFID</a></li>
+                        <li><a href="#">CodePro</a></li>
+                        <li><a href="#">HT28 Smart</a></li>
+                        <li><a href="#">HT24W</a></li>
+                        <li><a href="#">Sistema Integra</a></li>
+                        <li><a href="#">Cerradura CodePro</a></li>
+                        <li><a href="#">Sistema HT28Smart</a></li>
+                        <li><a href="#">Sistema HT Prox</a></li>
+                        <li><a href="#">Sistema HT22I</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="mercado_seccion" id="cajas" data-aos="fade-left" data-aos-duration="1000">
+        <div class="mercado_seccion_img">
+            <img src="./assets/img/Cajas-Digitales.png" alt="Educación">
+        </div>
+        <div class="mercado_text_wrapper">
+            <h3>CAJAS FUERTES ELECTRÓNICAS</h3>
+            <p>En estas épocas en las que las expectativas de una estancia de hotel están incrementando, elementos que antes eran considerados como exclusivos o de lujo son ahora requeridos como equipamiento estándar de una habitación. Onity ayuda a cumplir los requisitos de los clientes ofreciendo una amplia gama de Minibares silenciosos y fáciles de gestionar, así como Cajas Fuertes electrónicas para proteger los objetos de valor de los huéspedes como los efectos personales o los ordenadores portátiles. Estas soluciones están diseñadas para hoteles, empresas y aplicaciones residenciales, teniendo en cuenta el confort, la conveniencia y la seguridad. Onity ofrece soluciones reales y un servicio fiable para el Mercado hotelero, Empresas, Universidades, edificios Gubernamentales y Barcos. Cualquiera que sea su necesidad, Onity tiene una solución que se ajusta a sus requerimientos
+            </p>
+            <button class="btn_abrir" data-target="modal_cajas">Ver Productos</button>
+        </div>
+    </section>
+
+    <div id="modal_cajas" class="modal_overlay">
+        <div class="modal_content">
+            <button class="btn_cerrar">&times;</button>
+
+            <h2>Cajas Fuertes Electrónicas</h2>
+            <hr>
+
+            <div class="categorias_grid">
+                <div class="categoria">
+                    <ul>
+                        <li><a href="#">OS600</a></li>
+                        <li><a href="#">OS400</a></li>
+                        <li><a href="#">OS200</a></li>
+                        <li><a href="#">Laptop 50</a></li>
+                    </ul>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+
+
+    <section class="mercado_seccion" id="energia" data-aos="fade-right" data-aos-duration="1000">
+        <div class="mercado_seccion_img">
+            <img src="./assets/img/Disneys-Port-Orleans-French-Quarter_Full_30938.webp" alt="Bases Militares">
+        </div>
+        <div class="mercado_text_wrapper">
+            <h3>SISTEMAS DE GESTIÓN DE ENERGÍA</h3>
+            <p>Onity / Senercomm® ofrece una amplia línea de productos para el ahorro de energía con diseños innovadores y un rendimiento insuperable. Se ofrecen las soluciones de gestión de energía más avanzadas, con modelos para cada aplicación. Nuestros productos fusionan el control de temperatura digital con sensores pasivos por infrarrojos (PIR), ajustando la temperatura a niveles eficientes de energía cuando la habitación no está ocupada. Los productos Onity / Senercomm® trabajan con todo tipo de configuraciones de calefacción y aire acondicionado, y controles de luz. Onity ofrece soluciones reales y un servicio fiable para el Mercado hotelero, universidades, empresas, edificios gubernamentales y barcos. Cualquiera que sea su necesidad, Onity tiene una solución de gestión de energía que se ajusta a sus requerimientos.</p>
+            <button class="btn_abrir" data-target="modal_energia">Ver Productos</button>
+        </div>
+    </section>
+
+    <div id="modal_energia" class="modal_overlay">
+        <div class="modal_content">
+            <button class="btn_cerrar">&times;</button>
+
+            <h2>Sistemas de Gestión de Energía</h2>
+            <hr>
+
+            <div class="categorias_grid">
+                <div class="categoria">
+                    <ul>
+                        <li><a href="#">SensorStat DDC</a></li>
+                        <li><a href="#">Desconectador de Energía</a></li>
+                        <li><a href="#">Intellity</a></li>
+                        <li><a href="#">Sistema Sensorstat sin Cableado</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="mercado_seccion" id="minibares" data-aos="fade-left" data-aos-duration="1000">
+        <div class="mercado_seccion_img">
+            <img src="./assets/img/minibares-solution-10-581c86c2da7a6.jpg" alt="Barcos">
+        </div>
+        <div class="mercado_text_wrapper">
+            <h3>MINIBARES</h3>
+            <p>Los minibares son un servicio adicional del hotel para el huésped, un equipamiento indispensable del que además se puede obtener una rentabilidad importante. Onity ofrece una amplia gama de minibares especialmente diseñados para el mercado hotelero.</p>
+            <button class="btn_abrir" data-target="modal_minibares">Ver Productos</button>
+        </div>
+    </section>
+
+    <div id="modal_minibares" class="modal_overlay">
+        <div class="modal_content">
+            <button class="btn_cerrar">&times;</button>
+
+            <h2>Minibares</h2>
+            <hr>
+
+            <div class="categorias_grid">
+                <div class="categoria">
+                    <ul>
+                        <li><a href="#">Solution</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <img src="./assets/Logo_renew_white.png" alt="logo Global Control blanco">
+        <p>© 2026 Global Control. Todos los derechos reservados. Sitio diseñado y desarrollado por Pablo Navarro.
+        </p>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

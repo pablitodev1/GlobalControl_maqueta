@@ -116,13 +116,15 @@ nav a:hover {
     transition: opacity 0.3s ease, visibility 0.3s ease;/
 }
 
+
+/* Estilos de Index*/
 .index_welcome_container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: end;
     width: 100%;
-    min-height: 500px;
+    min-height: 700px;
     color: black;
     background-image: url("./img/welcome_image.jpg");
     background-repeat: no-repeat;
@@ -147,12 +149,19 @@ nav a:hover {
 }
 
 #index_products_title {
-    font-size: 1.2rem;
-    margin-top: 4rem;
-    padding-bottom: 3rem;
+    width: 50vw;
+    font-size: 2rem;
+    padding-left: 8rem;
+    padding-right: 1rem;
     color: #314b97;
-    text-align: center;
+    text-align: left;
 }
+
+#index_products_title p {
+    font-size: 1.2rem;
+    color: rgb(66, 66, 66);
+}
+
 
 .index_products_container {
     display: flex;
@@ -160,32 +169,37 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     max-width: 100%;
-    min-height: 300px;
-    padding-bottom: 5rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    gap: 30px;
-    flex-wrap: wrap;
+    min-height: 750px;
 }
 
-.index_product_container {
+.index_products_wrapper {
+    width: 50vw;
+    min-height: 600px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 15px 7vw 15px 0;
+}
+
+.index_product_card {
     position: relative;
-    width: 250px;
-    height: 400px;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    padding: 4rem 1rem;
+    padding: 3rem 1rem;
     background-size: cover;
     background-position: center;
     background-color: transparent;
+    gap: 10px;
     color: white;
     overflow: hidden;
 }
 
-.index_product_container::before {
+.index_product_card::before {
     content: "";
     position: absolute;
     top: 0;
@@ -199,14 +213,13 @@ nav a:hover {
     transition: transform 0.5s ease, filter 0.5s ease;
 }
 
-.index_product_container:hover::before {
+.index_product_card:hover::before {
     filter: blur(5px) brightness(0.5);
     transform: scale(1.1);
 }
 
-.index_product_container h3 {
-    font-size: 1rem;
-
+.index_product_card h3 {
+    font-size: 1.2rem;
 }
 
 .index_p_button {
@@ -214,15 +227,224 @@ nav a:hover {
     padding: 1rem;
     font-size: 0.8rem;
     font-weight: 700;
-    color: white;
-    background-color: transparent;
-    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    background-color: white;
+    border-radius: 50px;
     transition: background-color, color, 0.4s ease;
 }
 
 .index_p_button:hover {
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+}
+
+.index_mercados_title {
+    text-align: center;
+    padding: 4rem 2rem 1rem 2rem;
+    color: #314b97;
+    font-size: 1.7rem;
+}
+
+.index_mercados_title p {
+    font-size: 1.2rem;
+    color: rgb(66, 66, 66);
+}
+
+.index_mercados_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 20px 100px 20px;
+}
+
+.index_mercado_card a {
+    color: white;
+    font-weight: 750;
+}
+
+.index_mercado_card {
+    position: relative;
+    width: 200px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 3rem 1rem;
+    background-size: cover;
+    background-position: center;
+    background-color: transparent;
+    gap: 10px;
+    color: white;
+    overflow: hidden;
+}
+
+.index_mercado_card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: var(--bg-image);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.index_mercado_card:hover::before {
+    filter: blur(5px) brightness(0.5);
+    transform: scale(1.1);
+}
+
+/*Estilos para mercados*/
+
+.mercado_seccion {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    
+}
+
+.mercado_seccion_img {
+    width: 250px;
+    height: 350px
+}
+
+.mercado_seccion_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mercado_text_wrapper {
+    display: flex;
+    max-width: 40vw;
+    height: 350px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 1rem;
+    gap: 1rem;
+    background-color: rgb(223, 223, 223);
+}
+
+.mercado_text_wrapper h3 {
+    font-size: 2rem;
+    color: #314b97;
+}
+
+.mercado_text_wrapper p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #333333;
+}
+
+.btn_abrir {
+    border: solid 2px #314b97;
+    padding: 0.7rem 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #314b97;
     background-color: white;
-    color: rgb(53, 53, 53);
+    border-radius: 50px;
+    transition: background-color, color, 0.4s ease;
+    cursor: pointer;
+}
+
+.btn_abrir:hover {
+    background-color: #314b97;
+    color: white;
+}
+
+/* El fondo oscuro del modal */
+.modal_overlay {
+    position: fixed;
+    inset: 0;
+    /* top, left, right, bottom = 0 */
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+
+    /* Efecto de desaparición/aparición */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+/* Cuando el modal está activo */
+.modal_overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* La caja blanca del contenido */
+.modal_content {
+    background: white;
+    padding: 2.5rem;
+    width: 90%;
+    max-width: 650px;
+    border-radius: 8px;
+    position: relative;
+    transform: translateY(-20px);
+    /* Empieza un poco más arriba */
+    transition: transform 0.4s ease;
+}
+
+.modal_overlay.active .modal_content {
+    transform: translateY(0);
+}
+
+.btn_cerrar {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 2rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: #333;
+}
+
+.categorias_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.categoria h4 {
+    color: #3548b4;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.categoria ul {
+    list-style: none;
+}
+
+.categoria ul li {
+    margin-bottom: 8px;
+}
+
+.categoria a {
+    color: #555;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.categoria a:hover {
+    color: #3548b4;
+    text-decoration: underline;
 }
 
 footer {
@@ -237,6 +459,8 @@ footer img {
     width: 125px;
     margin-bottom: 0.7rem;
 }
+
+
 
 /* Estilos para produtos  */
 
@@ -582,8 +806,26 @@ footer img {
     }
 
     /*Este ajuste es para eliminar delay de animaciones en móvil sin romper las animaciones en desktop*/
-    .index_product_container[data-aos] {
+    .index_product_card[data-aos] {
         transition-delay: 0s !important;
+    }
+
+    .index_products_container {
+        flex-direction: column;
+    }
+
+    #index_products_title {
+        width: 100%;
+        padding: 50px 35px 10px 35px;
+        text-align: center;
+    }
+
+    .index_products_wrapper {
+        gap: 10px;
+        width: 90vw;
+        min-height: 0px;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 15px 35px 15px 35px;
     }
 
 
@@ -659,7 +901,6 @@ footer img {
     }
 
     .contacto_pais_text_container {
-    width: 100%;
+        width: 100%;
+    }
 }
-}
-

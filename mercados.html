@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./assets/script.js" defer></script>
+    <link rel="stylesheet" href="./assets/styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <title>Global Control</title>
+</head>
+
+<body>
+
+    <header>
+
+        <div id="image_header">
+            <a href="./index.html"><img src="./assets/Logo_renew.png" alt="logo Global Control"></a>
+        </div>
+
+
+        <!-- Inicio de NAVBAR responsiva, Breakpoint es 800px, puede ser menor si se reduce el fontsize de los enlaces en el CSS, para evitar links con dos lineas en pantallas mas pequeñas-->
+
+        <button id="open_sidebar_button" onclick="openSidebar()">
+            <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px">
+                <path
+                    d="M165.13-254.62q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.86q7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.87q-7.22 7.12-17.9 7.12H165.13Zm0-200.25q-10.68 0-17.9-7.27-7.23-7.26-7.23-17.99 0-10.74 7.23-17.87 7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.27 7.23 7.26 7.23 17.99 0 10.74-7.23 17.87-7.22 7.13-17.9 7.13H165.13Zm0-200.26q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.87q7.22-7.12 17.9-7.12h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.86q-7.22 7.13-17.9 7.13H165.13Z" />
+            </svg>
+        </button>
+
+        <nav id="navbar">
+            <ul>
+                <li><button id="close_sidebar_button" onclick="closeSidebar()">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px">
+                            <path
+                                d="m480-444.62-209.69 209.7q-7.23 7.23-17.5 7.42-10.27.19-17.89-7.42-7.61-7.62-7.61-17.7 0-10.07 7.61-17.69L444.62-480l-209.7-209.69q-7.23-7.23-7.42-17.5-.19-10.27 7.42-17.89 7.62-7.61 17.7-7.61 10.07 0 17.69 7.61L480-515.38l209.69-209.7q7.23-7.23 17.5-7.42 10.27-.19 17.89 7.42 7.61 7.62 7.61 17.7 0 10.07-7.61 17.69L515.38-480l209.7 209.69q7.23 7.23 7.42 17.5.19 10.27-7.42 17.89-7.62 7.61-17.7 7.61-10.07 0-17.69-7.61L480-444.62Z" />
+                        </svg></button></li>
+
+                <li><a href="./index.html">INICIO</a></li>
+                <li><a href="">QUIENES SOMOS</a></li>
+                <li><a href="">SERVICIOS</a></li>
+                <li><a class="active_link" href="./mercados.html">MERCADOS</a></li>
+                <li><a href="./productos.html">PRODUCTOS</a></li>
+                <li><a href="./contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <div id="overlay" onclick="closeSidebar()"></div>
+
+    <section class="mercado_seccion" id="hoteles" data-aos="fade-right" data-aos-duration="1000">
+        <div class="mercado_seccion_img">
+            <img src="./assets/img/hoteleria.jpg" alt="Hotelería">
+        </div>
+        <div class="mercado_text_wrapper">
+            <h3>HOTELES & RESORT</h3>
+            <p>Continuamos con nuestra dedicación a la industria hotelera mundial respondiendo a la creciente demanda de
+                múltiples soluciones a través de un único "partner" con servicio mundial. Nuestras soluciones
+                electrónicas se pueden encontrar en más de 22.000 hoteles por todo el mundo. Junto a Onity estamos
+                comprometidos a establecer relaciones duraderas con nuestros clientes y a proporcionarles las soluciones
+                que requieren. Más de 200 cadenas hoteleras de todo el mundo ya confían en Onity para el suministro de
+                sus soluciones electrónicas de hotel.</p>
+            <button class="btn_abrir" data-target="modal_hoteles">Ver Productos</button>
+        </div>
+    </section>
+
+    <div id="modal_hoteles" class="modal_overlay">
+        <div class="modal_content">
+            <button class="btn_cerrar">&times;</button>
+
+            <h2>Productos para Hotelería</h2>
+            <hr>
+
+            <div class="categorias_grid">
+                <div class="categoria">
+                    <h4>Cerraduras Electrónicas</h4>
+                    <ul>
+                        <li><a href="./productos/advance_rfid.html">Modelo Advance RFID</a></li>
+                        <li><a href="#">CodePro</a></li>
+                        <li><a href="#">HT28 Smart</a></li>
+                        <li><a href="#">HT24W</a></li>
+                    </ul>
+                </div>
+                <div class="categoria">
+                    <h4>Gestión de Energía</h4>
+                    <ul>
+                        <li><a href="#">SensorStat DDC</a></li>
+                        <li><a href="#">Intellity</a></li>
+                        <li><a href="#">DDC Wireless</a></li>
+                    </ul>
+                </div>
+                <div class="categoria">
+                    <h4>Cajas Fuertes Electrónicas</h4>
+                    <ul>
+                        <li><a href="#">OS200</a></li>
+                        <li><a href="#">OS400</a></li>
+                        <li><a href="#">OS600</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="mercado_seccion" id="educacion" data-aos="fade-left" data-aos-duration="1000">
+        <div class="mercado_seccion_img">
+            <img src="./assets/img/educacion.jpg" alt="Educación">
+        </div>
+        <div class="mercado_text_wrapper">
+            <h3>EDUCACIÓN</h3>
+            <p>Seguimos buscando formas de mejorar el servicio a estas comunidades. Un ejemplo de esto sería la
+                oportunidad que da a los clientes de que se les escuche a través de las reuniones de grupos de usuarios
+                (EAC Grupo Usuario), un evento de periodicidad anual que reúne tanto a usuarios como potenciales
+                usuarios del sistema Integra de Onity. Según Tony Artrip, Director de Seguridad de la Universidad de
+                Miami, "es una forma fenomenal de estar en contacto con las necesidades y opiniones del cliente. Es algo
+                muy recomendable para cualquier empresa." Onity es un verdadero apoyo para la industria de la Educación.
+            </p>
+            <button class="btn_abrir" data-target="modal_educacion">Ver Productos</button>
+        </div>
+    </section>
+
+    <div id="modal_educacion" class="modal_overlay">
+        <div class="modal_content">
+            <button class="btn_cerrar">&times;</button>
+
+            <h2>Productos para Educación</h2>
+            <hr>
+
+            <div class="categorias_grid">
+                <div class="categoria">
+                    <h4>Cerraduras Electrónicas</h4>
+                    <ul>
+                        <li><a href="#">Modelo Advance RFID</a></li>
+                        <li><a href="#">CodePro</a></li>
+                        <li><a href="#">Integra 5</a></li>
+                    </ul>
+                </div>
+                <div class="categoria">
+                    <h4>Gestión de Energía</h4>
+                    <ul>
+                        <li><a href="#">SensorStat DDC</a></li>
+                        <li><a href="#">Intellity</a></li>
+                        <li><a href="#">DDC Wireless</a></li>
+                    </ul>
+                </div>
+                <div class="categoria">
+                    <h4>Cajas Fuertes Electrónicas</h4>
+                    <ul>
+                        <li><a href="#">OS200</a></li>
+                        <li><a href="#">OS400</a></li>
+                        <li><a href="#">OS600</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="mercado_seccion" id="militares" data-aos="fade-right" data-aos-duration="1000">
+        <div class="mercado_seccion_img">
+            <img src="./assets/img/basesmilitares.jpg" alt="Bases Militares">
+        </div>
+        <div class="mercado_text_wrapper">
+            <h3>BASES MILITARES / EDIFICIOS GUBERNAMENTALES</h3>
+            <p>Nuestras soluciones electrónicas se pueden encontrar en bases militares, edificios gubernamentales y
+                portaaviones de todo el mundo, como por ejemplo la base Nellis Air Force Base, el Departamento de
+                Energía y la USS Enterprise. Descubra las múltiples soluciones y servicios de Onity diseñados
+                específicamente para aplicaciones militares y gubernamentales.</p>
+            <button class="btn_abrir" data-target="modal_militares">Ver Productos</button>
+        </div>
+    </section>
+
+    <div id="modal_militares" class="modal_overlay">
+        <div class="modal_content">
+            <button class="btn_cerrar">&times;</button>
+
+            <h2>Productos para Bases Militares / Edificios Gubernamentales</h2>
+            <hr>
+
+            <div class="categorias_grid">
+                <div class="categoria">
+                    <h4>Cerraduras Electrónicas</h4>
+                    <ul>
+                        <li><a href="#">ADVANCE RFID</a></li>
+                        <li><a href="#">ADVANCE</a></li>
+                        <li><a href="#">CodePro</a></li>
+                        <li><a href="#">HT28 Smart</a></li>
+                        <li><a href="#">HT24W</a></li>
+                        <li><a href="#">Integra 5</a></li>
+                    </ul>
+                </div>
+                <div class="categoria">
+                    <h4>Gestión de Energía</h4>
+                    <ul>
+                        <li><a href="#">SensorStat DDC</a></li>
+                        <li><a href="#">innPulse</a></li>
+                        <li><a href="#">DDC Wireless</a></li>
+                    </ul>
+                </div>
+                <div class="categoria">
+                    <h4>Cajas Fuertes Electrónicas</h4>
+                    <ul>
+                        <li><a href="#">OS200</a></li>
+                        <li><a href="#">OS400</a></li>
+                        <li><a href="#">OS600</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="mercado_seccion" id="barcos" data-aos="fade-left" data-aos-duration="1000">
+        <div class="mercado_seccion_img">
+            <img src="./assets/img/barcos.jpg" alt="Barcos">
+        </div>
+        <div class="mercado_text_wrapper">
+            <h3>BARCOS</h3>
+            <p>Hoy, somos la empresa líder en tecnologías innovadoras de gestión para instalaciones, desde cerraduras
+                electrónicas y tecnología chip, a cajas fuertes y soluciones para la gestión de la energía disponibles
+                para barcos y entornos marinos de todo el mundo.</p>
+            <button class="btn_abrir" data-target="modal_barcos">Ver Productos</button>
+        </div>
+    </section>
+
+    <div id="modal_barcos" class="modal_overlay">
+        <div class="modal_content">
+            <button class="btn_cerrar">&times;</button>
+
+            <h2>Productos para Barcos</h2>
+            <hr>
+
+            <div class="categorias_grid">
+                <div class="categoria">
+                    <h4>Cerraduras Electrónicas</h4>
+                    <ul>
+                        <li><a href="#">ADVANCE RFID</a></li>
+                        <li><a href="#">ADVANCE</a></li>
+                        <li><a href="#">CodePro</a></li>
+                        <li><a href="#">HT28 Smart</a></li>
+                        <li><a href="#">HT24W</a></li>
+                    </ul>
+                </div>
+                <div class="categoria">
+                    <h4>Gestión de Energía</h4>
+                    <ul>
+                        <li><a href="#">SensorStat DDC</a></li>
+                        <li><a href="#">Intellity</a></li>
+                        <li><a href="#">DDC Wireless</a></li>
+                    </ul>
+                </div>
+                <div class="categoria">
+                    <h4>Cajas Fuertes Electrónicas</h4>
+                    <ul>
+                        <li><a href="#">OS200</a></li>
+                        <li><a href="#">OS400</a></li>
+                        <li><a href="#">OS600</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="mercado_seccion" id="empresas" data-aos="fade-right" data-aos-duration="1000">
+        <div class="mercado_seccion_img">
+            <img src="./assets/img/empresas.jpg" alt="Empresas">
+        </div>
+        <div class="mercado_text_wrapper">
+            <h3>EMPRESAS</h3>
+            <p>Descubra la amplia gama de soluciones y servicios Onity diseñados específicamente para aplicaciones
+                corporativas, entidades religiosas, edificios de oficinas, entornos del transporte, centros
+                recreacionales y campuses corporativos de formación como por ejemplo Xerox y Price Waterhouse.</p>
+            <button class="btn_abrir" data-target="modal_empresas">Ver Productos</button>
+        </div>
+    </section>
+
+    <div id="modal_empresas" class="modal_overlay">
+        <div class="modal_content">
+            <button class="btn_cerrar">&times;</button>
+
+            <h2>Productos para Empresas</h2>
+            <hr>
+
+            <div class="categorias_grid">
+                <div class="categoria">
+                    <h4>Cerraduras Electrónicas</h4>
+                    <ul>
+                        <li><a href="#">Modelo Advance RFID</a></li>
+                        <li><a href="#">Integra 5</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <footer>
+        <img src="./assets/Logo_renew_white.png" alt="logo Global Control blanco">
+        <p>© 2026 Global Control. Todos los derechos reservados. Sitio diseñado y desarrollado por Pablo Navarro.</p>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
