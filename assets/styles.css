@@ -31,7 +31,7 @@ body {
 }
 
 #image_header img {
-    max-width: 250px;
+    max-width: 300px;
     height: auto;
     padding: 1em;
 }
@@ -125,25 +125,28 @@ nav a:hover {
     align-items: end;
     width: 100%;
     min-height: 700px;
-    color: black;
-    background-image: url("./img/welcome_image.jpg");
+    color: rgb(255, 255, 255);
+    background-image: url("./img/serene_edit.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     overflow: hidden;
 }
 
 .index_welcome_container h2 {
-    max-width: 650px;
+    max-width: 850px;
     text-align: right;
     margin-right: 8vw;
-    font-size: 3em;
-    color: #1a1a1a;
+    font-size: 3.2em;
+    font-weight: 1000;
+    color: #ffffff;
 }
 
 .index_welcome_container p {
     max-width: 550px;
     text-align: right;
-    font-size: 1.2em;
+    font-size: 1.4em;
+    font-weight: lighter;
     margin-right: 8vw;
     margin-top: 0.7em;
 }
@@ -784,10 +787,7 @@ footer img {
     }
 
     .index_welcome_container {
-        background-image: url(./img/welcome_image_negative_2.jpg);
-        background-size: cover;
         align-items: center;
-        color: white;
     }
 
     .index_welcome_container h2 {
