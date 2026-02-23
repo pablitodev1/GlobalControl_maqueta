@@ -734,6 +734,7 @@ footer img {
 }
 
 
+
 /* el breakingpoint 800px es debido al font size de los enlaces (en nav a), se puede usar un breaking point menor si se ajusta eso, o el padding de los enlaces del navbar, precaución: los paddings de los enlaces se mantienen en el breakingpoint */
 
 @media screen and (max-width: 800px) {
@@ -788,6 +789,7 @@ footer img {
 
     .index_welcome_container {
         align-items: center;
+        background-image: url(../assets/img/serene_edit_wood_center.jpg);
     }
 
     .index_welcome_container h2 {
