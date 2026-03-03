@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="../assets/script.js" defer></script>
+    <link rel="stylesheet" href="../assets/styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+    <title>Global Control</title>
+</head>
+
+<body>
+
+    <header>
+
+        <div id="image_header">
+            <a href="../index.html"><img src="../assets/Logo_renew_v2.png" alt="logo Global Control"></a>
+        </div>
+
+
+        <!-- Inicio de NAVBAR responsiva, Breakpoint es 800px, puede ser menor si se reduce el fontsize de los enlaces en el CSS, para evitar links con dos lineas en pantallas mas pequeñas-->
+
+        <button id="open_sidebar_button" onclick="openSidebar()">
+            <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px">
+                <path
+                    d="M165.13-254.62q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.86q7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.87q-7.22 7.12-17.9 7.12H165.13Zm0-200.25q-10.68 0-17.9-7.27-7.23-7.26-7.23-17.99 0-10.74 7.23-17.87 7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.27 7.23 7.26 7.23 17.99 0 10.74-7.23 17.87-7.22 7.13-17.9 7.13H165.13Zm0-200.26q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.87q7.22-7.12 17.9-7.12h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.86q-7.22 7.13-17.9 7.13H165.13Z" />
+            </svg>
+        </button>
+
+        <nav id="navbar">
+            <ul>
+                <li><button id="close_sidebar_button" onclick="closeSidebar()">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px">
+                            <path
+                                d="m480-444.62-209.69 209.7q-7.23 7.23-17.5 7.42-10.27.19-17.89-7.42-7.61-7.62-7.61-17.7 0-10.07 7.61-17.69L444.62-480l-209.7-209.69q-7.23-7.23-7.42-17.5-.19-10.27 7.42-17.89 7.62-7.61 17.7-7.61 10.07 0 17.69 7.61L480-515.38l209.69-209.7q7.23-7.23 17.5-7.42 10.27-.19 17.89 7.42 7.61 7.62 7.61 17.7 0 10.07-7.61 17.69L515.38-480l209.7 209.69q7.23 7.23 7.42 17.5.19 10.27-7.42 17.89-7.62 7.61-17.7 7.61-10.07 0-17.69-7.61L480-444.62Z" />
+                        </svg></button></li>
+
+                <li><a href="../index.html">INICIO</a></li>
+                <li><a href="">QUIENES SOMOS</a></li>
+                <li><a href="../mercados.html">MERCADOS</a></li>
+                <li><a class="active_link" href="/productos.html">PRODUCTOS</a></li>
+                <li><a href="../contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <div id="overlay" onclick="closeSidebar()"></div>
+
+    <div class="product_header_container">
+
+        <div class="product_image_header_cotainer" data-aos="fade-right" data-aos-duration="800">
+            <img src="../assets/img/Trillium rfid.png" alt="">
+        </div>
+
+        <div class="product_text_header_container" data-aos="fade-left" data-aos-duration="800">
+            <h2>Trillium RFID</h2>
+            <p>La serie Trillium de Onity combina un diseño fino y elegante con la versatilidad necesaria para el entorno hotelero moderno. Esta cerradura de proximidad RFID destaca por su capacidad de adaptarse estéticamente a cualquier instalación, ofreciendo una solución robusta y tecnológicamente avanzada que permite el uso de diversos dispositivos de apertura como tarjetas, pulseras o llaveros, además de la opción de acceso móvil mediante DirectKey.</p>
+        </div>
+
+    </div>
+
+    <div class="product_marketing_container">
+        <div class="product_marketing_text" data-aos="fade-right" data-aos-duration="800">
+            <h3>Eficiencia en la Modernización</h3>
+            <p>Diseñada pensando en la continuidad operativa, la serie Trillium facilita enormemente los procesos de renovación hotelera. Estas cerraduras están específicamente concebidas para permitir una reposición sencilla de modelos anteriores de la serie HT de Onity. Gracias a este sistema, los hoteles pueden actualizar sus instalaciones sin incurrir en trabajos adicionales de pintura o modificaciones estructurales en las puertas, optimizando así los tiempos y costes de cualquier proyecto de reforma.</p>
+        </div>
+        <div class="product_marketing_image" data-aos="fade-left" data-aos-duration="800">
+            <img src="../assets/img/trillium_prod_1.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="product_marketing_container">
+        <div class="product_marketing_image" data-aos="fade-right" data-aos-duration="800">
+            <img src="../assets/img/trillium_prod_2.jpg" alt="">
+        </div>
+
+        <div class="product_marketing_text_alt" data-aos="fade-left" data-aos-duration="800">
+            <h3>Versatilidad y Seguridad Avanzada</h3>
+            <p>La seguridad es el pilar central de la serie Trillium, la cual integra tecnología MIFARE Plus para elevar la protección de las credenciales de los huéspedes. Además de su seguridad avanzada, el sistema ofrece una flexibilidad operativa excepcional, permitiendo configuraciones personalizadas según las necesidades del establecimiento. Para garantizar un control total, cada cerradura incluye una memoria no volátil que registra las últimas 500 aperturas, incluyendo detalles críticos como fecha, hora y el usuario que accedió, asegurando así un seguimiento exhaustivo y fiable.</p>
+        </div>
+    </div>
+
+    <div class="product_characteristics" data-aos="fade-up" data-aos-duration="800">
+        <h2>Características de ADVANCE Trillium</h2>
+        <ul class="characteristics_list">
+            <li>Compatible con los sistemas de cerraduras electrónicas
+                Onity HT22, OnPoint y HT24W</li>
+            <li>Múltiples dispositivos de apertura disponibles: tarjetas,
+                pulseras, llaveros, etc.</li>
+            <li>Memoria no volátil: graba las últimas 500 aperturas,
+                incluyendo fecha, hora y usuario</li>
+            <li>Compatible con DirectKey: el módulo Bluetooth® se puede
+                suministrar ya instalado o añadirse más tarde</li>
+            <li>Programable según las necesidades del cliente (“Modo
+                Oficina”, Paso Libre, etc.)</li>
+            <li>LEDs para indicar el estado de la cerradura, incluyendo
+                aviso de batería baja.</li>
+            <li>Permite programar el período de tiempo que la puerta
+                permanece abierta y el cierre automático.</li>
+            <li>Toda nueva tarjeta de cliente anula las anteriores, evitando
+                la reentrada.</li>
+            <li>Gestión de turnos horarios.</li>
+        </ul>
+    </div>
+
+    <div class="product_credentials">
+
+    </div>
+
+    <div class="product_options" data-aos="fade-up" data-aos-duration="800">
+        <div class="product_options_text">
+            <h3>Opciones de personalización</h3>
+            <p>Serene ofrece una variedad de opciones de personalización para adaptarse a la estética de tu hotel. Elige
+                entre una amplia gama de acabados y palancas para crear un diseño que complemente perfectamente la
+                decoración de tu hotel.</p>
+        </div>
+        <div class="product_options_images">
+            <div class="lever_container">
+                <img src="../assets/img/Wing.png" alt="">
+                <h3>Wing</h3>
+            </div>
+            <div class="lever_container">
+                <img src="../assets/img/Grenada.png" alt="">
+                <h3>Granada</h3>
+            </div>
+            <div class="lever_container">
+                <img src="../assets/img/Toledo.png" alt="">
+                <h3>Toledo</h3>
+            </div>
+        </div>
+        <div class="product_options_images">
+            <div class="color_container">
+                <img src="../assets/img/Cobre antiguo.png" alt="">
+                <h3>Cobre antiguo</h3>
+            </div>
+            <div class="color_container">
+                <img src="../assets/img/Cobre satinado.png" alt="">
+                <h3>Cobre satinado</h3>
+            </div>
+            <div class="color_container">
+                <img src="../assets/img/Negro mate.png" alt="">
+                <h3>Negro mate</h3>
+            </div>
+            <div class="color_container">
+                <img src="../assets/img/Satin cromado.png" alt="">
+                <h3>Cromo satinado</h3>
+            </div>
+            <div class="color_container">
+                <img src="../assets/img/Cromado pulido.png" alt="">
+                <h3>Cromo pulido</h3>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <img src="../assets/Logo_renew_v2_white.png" alt="logo Global Control blanco">
+        <p>© 2026 Global Control. Todos los derechos reservados. Sitio diseñado y desarrollado por Pablo Navarro.</p>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

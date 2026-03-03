@@ -306,18 +306,26 @@ nav a:hover {
 
 /*Estilos para mercados*/
 
+.categories_wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem;
+}
+
 .mercado_seccion {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 2rem;
-
 }
 
 .mercado_seccion_img {
-    width: 250px;
-    height: 350px
+    width: 300px;
+    height: 600px
 }
 
 .mercado_seccion_img img {
@@ -328,34 +336,34 @@ nav a:hover {
 
 .mercado_text_wrapper {
     display: flex;
-    max-width: 40vw;
-    height: 350px;
+    width: 300px;
+    height: 600px;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: start;
-    padding: 1rem;
-    gap: 1rem;
-    background-color: rgb(223, 223, 223);
+    padding: 4rem 1rem 1rem 1rem;
+    gap: 3rem;
+    background-color: #719dee;
 }
 
 .mercado_text_wrapper h3 {
     font-size: 2rem;
-    color: #314b97;
+    color: #ffffff;
 }
 
 .mercado_text_wrapper p {
     font-size: 1rem;
     line-height: 1.5rem;
-    color: #333333;
+    color: #ffffff;
 }
 
 .btn_abrir {
-    border: solid 2px #314b97;
+    border: solid 2px #ffffff;
     padding: 0.7rem 1rem;
     font-size: 1rem;
     font-weight: 700;
     color: #314b97;
-    background-color: white;
+    background-color: #ffffff;
     border-radius: 50px;
     transition: background-color, color, 0.4s ease;
     cursor: pointer;
@@ -512,7 +520,7 @@ footer img {
     justify-content: center;
     align-items: center;
     background-color: #ffffff;
-    min-height: 650px;
+    height: auto;
     width: 100%;
 }
 
@@ -536,13 +544,138 @@ footer img {
     color: #333333;
 }
 
+.product_marketing_text_alt {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 4rem;
+}
+
+.product_marketing_text_alt h3 {
+    font-size: 3rem;
+    color: #314b97;
+}
+
+.product_marketing_text_alt p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #333333;
+}
+
 .product_marketing_image {
     width: 50%;
-    height: stretch;
-    background-image: url(../assets/img/DirectKey_onity.jpeg);
-    background-position: center;
-    background-size: cover;
+    height: 650px;
+    overflow: hidden;
+}
 
+.product_marketing_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    overflow: hidden;
+}
+
+.product_characteristics {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 7rem 3rem;
+    background-color: #719dee;
+    color: white;
+}
+
+.product_characteristics h2 {
+    font-size: 3rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+.characteristics_list {
+    list-style-type: disc;
+    column-count: 2;
+    column-gap: 10vw;
+}
+
+.characteristics_list li {
+    break-inside: avoid;
+    max-width: 30vw;
+    padding-top: 0.5rem;
+}
+
+.product_options {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 7rem 1rem;
+}
+
+.product_options_text {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+.product_options_text h3 {
+    font-size: 3rem;
+    color: #314b97;
+    padding-bottom: 1rem;
+}
+
+.product_options_images {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    padding: 3rem 2rem;
+}
+
+.lever_container {
+    transition: transform 0.3s ease;
+}
+
+.lever_container:hover {
+    transform: scale(1.2);
+}
+
+.lever_container img {
+    width: 200px;
+    height: auto;
+}
+
+.lever_container h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #314b97;
+}
+
+.color_container {
+    transition: transform 0.3s ease;
+}   
+
+.color_container:hover {
+    transform: scale(1.2);
+}
+
+.color_container img {
+    width: 60px;
+    height: auto;
+}
+
+.color_container h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #314b97;
 }
 
 /* Estilos para produtos  */
@@ -936,19 +1069,58 @@ footer img {
         text-align: center;
     }
 
-    .product_marketing_container { 
+    .product_marketing_container {
         flex-direction: column;
     }
 
     .product_marketing_text {
         width: 100%;
-        padding: 2rem 1rem;
+        padding: 4rem 3rem;
         align-items: center;
         text-align: center;
     }
 
+    .product_marketing_text_alt {
+        width: 100%;
+        padding: 4rem 3rem;
+        align-items: center;
+        text-align: center;
+        background-color: #719dee;
+    }
+
+    .product_marketing_text_alt h3,
+    .product_marketing_text_alt p {
+        color: white;
+    }
+
+    .product_options_images {
+        flex-direction: column;
+    }
+
     .product_marketing_image {
         display: none;
+    }
+
+    .product_characteristics {
+        background-color: white;
+        color: black;
+    }
+
+    .product_characteristics h2 {
+        color: #314b97;
+    }
+
+    .characteristics_list {
+        column-count: 1;
+    }
+
+    .characteristics_list li {
+        max-width: 70vw;
+        color: #333333;
+    }
+
+    .product_options_text {
+        width: 80%;
     }
 
     /*Este ajuste es para eliminar delay de animaciones en móvil sin romper las animaciones en desktop*/
