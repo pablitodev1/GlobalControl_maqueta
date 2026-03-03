@@ -312,7 +312,7 @@ nav a:hover {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    padding: 4rem;
+    padding: 1rem 4rem 1rem 4rem;
 }
 
 .mercado_seccion {
@@ -661,7 +661,7 @@ footer img {
 
 .color_container {
     transition: transform 0.3s ease;
-}   
+}
 
 .color_container:hover {
     transform: scale(1.2);
@@ -1043,6 +1043,25 @@ footer img {
         min-height: 0px;
         grid-template-columns: repeat(1, 1fr);
         padding: 15px 35px 15px 35px;
+    }
+
+    /* Mercados */
+
+    .mercado_seccion_img {
+        width: 50vw;
+        height: 600px
+    }
+
+    .mercado_text_wrapper {
+        display: flex;
+        width: 50vw;
+        height: 600px;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        padding: 4rem 1rem 1rem 1rem;
+        gap: 3rem;
+        background-color: #719dee;
     }
 
 
