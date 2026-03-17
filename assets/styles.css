@@ -479,6 +479,7 @@ footer {
     background-color: var(--primary-blue);
     color: white;
     text-align: center;
+    line-height: 1.5rem;
     padding: 3rem 2rem;
     margin-top: auto;
 }
@@ -486,6 +487,16 @@ footer {
 footer img {
     width: 125px;
     margin-bottom: 0.7rem;
+}
+
+#location_footer {
+    font-size: 1.2rem;
+    color: var(--white);
+}
+
+#phone_footer {
+    font-size: 1.2rem;
+    color: var(--white);
 }
 
 /*NUEVO ESTILOS PRODUCTOS */
@@ -703,9 +714,130 @@ footer img {
 
 /* Estilos para iconos google*/
 .material-symbols-outlined {
-    font-size: 1.3rem;
+    font-size: 2rem;
     font-weight: 600;
     color: var(--primary-blue);
+}
+
+/* Estilos Upgrade */
+
+#key {
+    color: var(--white);
+    font-size: 5rem;
+}
+
+#update {
+    color: var(--white);
+    font-size: 5rem;
+}
+
+#search { 
+    color: var(--primary-blue);
+    font-size: 5rem;
+}
+
+.upgrade_welcome_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 700px;
+    color: rgb(255, 255, 255);
+    background-image: url("./img/upgrade_header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.upgrade_welcome_container h2 {
+    max-width: 90vw;
+    text-align: center;
+    font-size: 3.2em;
+    font-weight: 1000;
+    color: var(--white);
+}
+
+.upgrade_welcome_container p {
+    max-width: 90vw;
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: lighter;
+}
+
+.upgrade_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+}
+
+.upgrade_block {
+    height: stretch;
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 14rem 10%;
+}
+
+.upgrade_block p{
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+}
+
+#upgrade_text_1 {
+    background-color: var(--primary-blue);
+    color: #ffffff;
+}
+
+#upgrade_text_2 {
+    background-color: #4f6dc7;
+    color: #ffffff;
+}
+
+.upgrade_divider {
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+    height: 2px;
+    background-color: var(--white);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#divider_negative {
+    background-color: var(--primary-blue);
+}
+
+.contact_container {
+    display: block;
+    text-align: center;
+    padding: 6rem;
+    background-color: #4f6dc7;
+    color: white;
+}
+
+.contact_container h3{
+    font-weight: 500;
+}
+
+.upgrade_container a{
+    color: var(--gray-medium);
+    font-weight: 900;
+    transition: color 0.5s ease;
+}
+
+.upgrade_container a:hover{
+    color: var(--dark-blue-btn);
+}
+
+/* Estilos de NOSOTROS */
+.upgrade_block h2{
+    font-size: 3rem;
 }
 
 /* Estilos de CONTACTO */
@@ -979,6 +1111,15 @@ footer img {
         transition-delay: 0s !important;
     }
 
+    /* Estilos para upgrade en mobile */
+    .upgrade_container {
+        flex-direction: column;
+    }
+
+    .upgrade_block {
+        width: 100%;
+    }
+
     /* Estilos para contacto en mobile */
     .contacto_pais_container {
         flex-direction: column;
@@ -1014,5 +1155,9 @@ footer img {
 
     .contacto_pais_text_container {
         width: 100%;
+    }
+
+    .upgrade_container {
+        flex-direction: column;
     }
 }

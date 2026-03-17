@@ -1,3 +1,5 @@
+
+//Funciones para Ocultar/mostrar sidebar en movil
 const navbar = document.getElementById('navbar')
 const overlay = document.getElementById('overlay')
 
@@ -11,12 +13,12 @@ function closeSidebar(){
     overlay.classList.remove('overlay_show')
 }
 
+// Para mini menu de productos Cerraduras
 document.addEventListener('DOMContentLoaded', () => {
     const botonesAbrir = document.querySelectorAll('.btn_abrir');
     const botonesCerrar = document.querySelectorAll('.btn_cerrar');
     const overlays = document.querySelectorAll('.modal_overlay');
 
-    // Abrir modal
     botonesAbrir.forEach(btn => {
         btn.addEventListener('click', () => {
             const modalId = btn.getAttribute('data-target');
@@ -25,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Cerrar modal al hacer click en el botón (X)
+    
     botonesCerrar.forEach(btn => {
         btn.addEventListener('click', () => {
             btn.closest('.modal_overlay').classList.remove('active');
@@ -33,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Cerrar modal al hacer click fuera de la caja blanca
+  
     window.addEventListener('click', (e) => {
         if (e.target.classList.contains('modal_overlay')) {
             e.target.classList.remove('active');

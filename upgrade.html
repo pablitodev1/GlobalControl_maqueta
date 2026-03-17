@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./assets/script.js" defer></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="./assets/styles.css">
+
+    <title>Global Control</title>
+</head>
+
+<body>
+
+    <header>
+
+        <div id="image_header">
+            <a href="./index.html"><img src="./assets/Logo_renew_v2.png" alt="logo Global Control"></a>
+        </div>
+
+
+        <!-- Inicio de NAVBAR responsiva, Breakpoint es 800px, puede ser menor si se reduce el fontsize de los enlaces en el CSS, para evitar links con dos lineas en pantallas mas pequeñas-->
+
+        <button id="open_sidebar_button" onclick="openSidebar()">
+            <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px">
+                <path
+                    d="M165.13-254.62q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.86q7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.87q-7.22 7.12-17.9 7.12H165.13Zm0-200.25q-10.68 0-17.9-7.27-7.23-7.26-7.23-17.99 0-10.74 7.23-17.87 7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.27 7.23 7.26 7.23 17.99 0 10.74-7.23 17.87-7.22 7.13-17.9 7.13H165.13Zm0-200.26q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.87q7.22-7.12 17.9-7.12h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.86q-7.22 7.13-17.9 7.13H165.13Z" />
+            </svg>
+        </button>
+
+        <nav id="navbar">
+            <ul>
+                <li><button id="close_sidebar_button" onclick="closeSidebar()">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px">
+                            <path
+                                d="m480-444.62-209.69 209.7q-7.23 7.23-17.5 7.42-10.27.19-17.89-7.42-7.61-7.62-7.61-17.7 0-10.07 7.61-17.69L444.62-480l-209.7-209.69q-7.23-7.23-7.42-17.5-.19-10.27 7.42-17.89 7.62-7.61 17.7-7.61 10.07 0 17.69 7.61L480-515.38l209.69-209.7q7.23-7.23 17.5-7.42 10.27-.19 17.89 7.42 7.61 7.62 7.61 17.7 0 10.07-7.61 17.69L515.38-480l209.7 209.69q7.23 7.23 7.42 17.5.19 10.27-7.42 17.89-7.62 7.61-17.7 7.61-10.07 0-17.69-7.61L480-444.62Z" />
+                        </svg></button></li>
+
+                <li><a href="./index.html">INICIO</a></li>
+                <li><a href="./nosotros.html">QUIENES SOMOS</a></li>
+                <li><a href="./productos.html">PRODUCTOS</a></li>
+                <li><a class="active_link" href="./upgrade.html">UPGRADE</a></li>
+                <li><a href="./contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <div id="overlay" onclick="closeSidebar()"></div>
+
+    <div class="upgrade_welcome_container" data-aos="fade-down" data-aos-duration="1000">
+        <h2>Modernización y Upgrade tecnológico</h2>
+        <p>Mantenemos tus cerraduras viables a lo largo del tiempo</p>
+    </div>
+
+    <div class="upgrade_container">
+        <div class="upgrade_block" id="upgrade_text_1" data-aos="fade-right" data-aos-duration="1000">
+            <span class="material-symbols-outlined" id="key">
+                encrypted
+            </span>
+            <div class="upgrade_divider"></div>
+            <p>En Global Control sabemos que la
+                infraestructura física de una cerradura de alta calidad puede durar décadas, pero la tecnología digital
+                avanza a un ritmo distinto. Nuestro programa de Upgrade permite a nuestros clientes cerrar la brecha
+                tecnológica sin necesidad de reemplazar todo su hardware. Actualizamos el núcleo de sus sistemas para
+                que sigan rindiendo al máximo nivel de seguridad actual.</p>
+        </div>
+
+        <div class="upgrade_block" id="upgrade_text_2" data-aos="fade-left" data-aos-duration="1000">
+            <span class="material-symbols-outlined" id="update">
+                update
+            </span>
+            <div class="upgrade_divider"></div>
+            <p>¿Por qué cambiar lo que aún funciona?
+                Mediante actualizaciones críticas de firmware y mejoras de componentes específicos, transformamos sus
+                sistemas antiguos en dispositivos compatibles con los estándares modernos. Este proceso no solo optimiza
+                el
+                rendimiento y la velocidad de respuesta, sino que representa una decisión económicamente inteligente y
+                sustentable, evitando gastos innecesarios de obra civil o reposición total.</p>
+        </div>
+    </div>
+
+    <div class="upgrade_container" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+        <div class="upgrade_block">
+            <span class="material-symbols-outlined" id="search">
+                search
+            </span>
+            <div class="upgrade_divider" id="divider_negative"></div>
+            <p>Si necesitas una revisión de tu cerradura o una actualización de software <a
+                    href="./contacto.html">contáctanos</a>.</p>
+        </div>
+    </div>
+
+    <footer>
+        <img src="./assets/Logo_renew_v2_white.png" alt="logo Global Control blanco">
+
+        <p><span class="material-symbols-outlined" id="location_footer">
+                location_on
+            </span>Enrique Mac Iver #142 Of. 304, Santiago Centro, Chile. | <span class="material-symbols-outlined" id="phone_footer">
+                phone_enabled
+            </span> +562 2466 5691</p>
+        <p>© 2026 Global Control. Todos los derechos reservados. Sitio diseñado y desarrollado por Pablo Navarro.</p>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
