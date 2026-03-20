@@ -177,7 +177,7 @@ nav a:hover {
 }
 
 #index_products_title p {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     color: var(--gray-text);
 }
 
@@ -244,7 +244,7 @@ nav a:hover {
 .index_p_button {
     border: solid 2px white;
     padding: 1rem;
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: 700;
     color: var(--black);
     background-color: white;
@@ -265,7 +265,7 @@ nav a:hover {
 }
 
 .index_mercados_title p {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     color: var(--gray-text);
 }
 
@@ -374,21 +374,21 @@ nav a:hover {
 }
 
 .btn_abrir {
-    border: solid 2px var(--white);
+    
     padding: 0.7rem 1rem;
-    font-size: 1rem;
+    font-size: 1.3rem;
     font-weight: 700;
     width: fit-content;
-    color: var(--primary-blue);
-    background-color: var(--white);
+    color: var(--white);
+    background-color: var(--primary-blue);
     border-radius: 50px;
     transition: background-color, color, 0.4s ease;
     cursor: pointer;
 }
 
 .btn_abrir:hover {
-    background-color: var(--primary-blue);
-    color: white;
+    background-color: var(--gray-light);
+    color: var(--primary-blue);
 }
 
 /* El fondo oscuro del modal */
@@ -427,6 +427,10 @@ nav a:hover {
     transition: transform 0.4s ease;
 }
 
+.modal_content h2 {
+    font-size: 2rem;
+}
+
 .modal_overlay.active .modal_content {
     transform: translateY(0);
 }
@@ -449,13 +453,6 @@ nav a:hover {
     margin-top: 1.5rem;
 }
 
-.categoria h4 {
-    color: var(--secondary-blue);
-    border-bottom: 2px solid #eee;
-    padding-bottom: 5px;
-    margin-bottom: 10px;
-}
-
 .categoria ul {
     list-style: none;
 }
@@ -467,7 +464,7 @@ nav a:hover {
 .categoria a {
     color: #555;
     text-decoration: none;
-    font-size: 0.9rem;
+    font-size: 1.4rem;
 }
 
 .categoria a:hover {
@@ -477,6 +474,7 @@ nav a:hover {
 
 footer {
     background-color: var(--primary-blue);
+    font-size: 1.2rem;
     color: white;
     text-align: center;
     line-height: 1.5rem;
@@ -490,12 +488,12 @@ footer img {
 }
 
 #location_footer {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     color: var(--white);
 }
 
 #phone_footer {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     color: var(--white);
 }
 
@@ -538,8 +536,8 @@ footer img {
 }
 
 .product_text_header_container p {
-    font-size: 1rem;
-    line-height: 1.5rem;
+    font-size: 1.4rem;
+    line-height: 2rem;
 }
 
 .product_marketing_container {
@@ -567,8 +565,8 @@ footer img {
 }
 
 .product_marketing_text p {
-    font-size: 1rem;
-    line-height: 1.5rem;
+    font-size: 1.4rem;
+    line-height: 2rem;
     color: var(--gray-dark);
 }
 
@@ -587,8 +585,8 @@ footer img {
 }
 
 .product_marketing_text_alt p {
-    font-size: 1rem;
-    line-height: 1.5rem;
+    font-size: 1.4rem;
+    line-height: 2rem;
     color: var(--gray-dark);
 }
 
@@ -631,6 +629,8 @@ footer img {
 
 .characteristics_list li {
     break-inside: avoid;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
     max-width: 30vw;
     padding-top: 0.5rem;
 }
@@ -658,6 +658,11 @@ footer img {
     padding-bottom: 1rem;
 }
 
+.product_options_text p {
+    font-size: 1.4rem;
+    line-height: 2rem;
+}
+
 .product_options_images {
     display: flex;
     flex-wrap: wrap;
@@ -682,7 +687,7 @@ footer img {
 }
 
 .lever_container h3 {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     font-weight: 700;
     color: var(--primary-blue);
 }
@@ -701,7 +706,7 @@ footer img {
 }
 
 .color_container h3 {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     font-weight: 700;
     color: var(--primary-blue);
 }
@@ -785,8 +790,8 @@ footer img {
 }
 
 .upgrade_block p{
-    font-size: 1.2rem;
-    line-height: 1.8rem;
+    font-size: 1.4rem;
+    line-height: 2rem;
 }
 
 #upgrade_text_1 {
@@ -797,6 +802,16 @@ footer img {
 #upgrade_text_2 {
     background-color: #4f6dc7;
     color: #ffffff;
+}
+
+.upgrade_block_image {
+    height: stretch;
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 14rem 10%;
 }
 
 .upgrade_divider {
@@ -833,6 +848,20 @@ footer img {
 
 .upgrade_container a:hover{
     color: var(--dark-blue-btn);
+}
+
+#upgrade_image_1 {
+    background-image: url(../assets/img/upgrade_image_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#upgrade_image_2 {
+    background-image: url(../assets/img/upgrade_image_2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 /* Estilos de NOSOTROS */
@@ -1118,6 +1147,10 @@ footer img {
 
     .upgrade_block {
         width: 100%;
+    }
+
+    .upgrade_block_image {
+        display: none;
     }
 
     /* Estilos para contacto en mobile */
