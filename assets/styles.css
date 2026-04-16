@@ -1190,7 +1190,16 @@ footer img {
         width: 100%;
     }
 
+    .contacto_text_block {
+        align-items: center;
+        text-align: center;
+    }
+
     .upgrade_container {
         flex-direction: column;
+    }
+
+    .material-symbols-outlined {
+        font-size: 1.5rem;
     }
 }
